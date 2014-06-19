@@ -44,8 +44,8 @@ func == (left: EllipticCurve, right: EllipticCurve) -> Bool
 
 struct Point
 {
-    var x: Double
-    var y: Double
+    let x: Double
+    let y: Double
     let curve: EllipticCurve
 
     init(x: Double, y: Double, curve: EllipticCurve)
