@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  EllipticCurves
+//  EllipticCurves - http://jeremykun.com/2014/02/24/elliptic-curves-as-python-objects/
 //
 //  Created by Berkus on 19/06/14.
 //  Copyright (c) 2014 Berkus. All rights reserved.
