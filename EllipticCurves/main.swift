@@ -61,6 +61,29 @@ struct Point
     }
 }
 
+struct Ideal
+{
+    let curve: EllipticCurve
+
+    init(curve: EllipticCurve)
+    {
+        self.curve = curve
+    }
+
+    var description: String {
+        return "[Ideal]"
+    }
+}
+
+@prefix func -(right: Point) -> Point
+{
+    return Point(x: right.x, y: -right.y, curve: right.curve)
+}
+
+@prefix func -(right: Ideal) -> Ideal
+{
+    return Ideal(curve: right.curve)
+}
 
 println(EllipticCurve(a: 17, b: 1).description)
 //println(EllipticCurve(a: 0, b: 0))
